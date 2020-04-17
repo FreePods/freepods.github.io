@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>FreePods v1.4更新内容</title>
+    <link href="/2020/04/17/FreePods-v1-4%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/"/>
+    <url>/2020/04/17/FreePods-v1-4%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/</url>
+    
+    <content type="html"><![CDATA[<h2 id="FreePods-v1-4更新内容"><a href="#FreePods-v1-4更新内容" class="headerlink" title="FreePods v1.4更新内容"></a>FreePods v1.4更新内容</h2><h4 id="新增功能："><a href="#新增功能：" class="headerlink" title="新增功能："></a>新增功能：</h4><h5 id="一、动作设置："><a href="#一、动作设置：" class="headerlink" title="一、动作设置："></a>一、动作设置：</h5><p>1.新增动作逻辑组合功能：现在AirPods拥有的动作逻辑包含暂停、播放、下一曲、上一曲。于是我将其细分为以下。</p><table><thead><tr><th></th><th><strong>暂停</strong></th><th>下一曲</th><th>下一曲</th><th>上一曲</th></tr></thead><tbody><tr><td>暂停</td><td>功能1</td><td>功能2</td><td>功能3</td><td>功能4</td></tr><tr><td>播放</td><td>功能5</td><td>功能6</td><td>功能7</td><td>功能8</td></tr><tr><td>下一曲</td><td>功能9</td><td>功能10</td><td>功能11</td><td>功能12</td></tr><tr><td>上一曲</td><td>功能13</td><td>功能14</td><td>功能15</td><td>功能16</td></tr></tbody></table><p>理论上一共可以实现十六种排列组合方式，分别拉起不同的功能。</p><p>2.现有自定义动作：包含拉起语音助手、进入系统的一些app、常见的app。</p><p>3.时延设置：可设置时延，在一定时间内可以触发某种动作。</p><h5 id="二、开启启动"><a href="#二、开启启动" class="headerlink" title="二、开启启动"></a>二、开启启动</h5><p>当手机开机后会自动响应开机广播启动本程序后台待命。</p><h5 id="三、动画弹窗"><a href="#三、动画弹窗" class="headerlink" title="三、动画弹窗"></a>三、动画弹窗</h5><p>千呼万唤的动画弹窗来了，支持全系AirPods及黑暗模式。</p><p><img src="/FreePods-v1-4%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/2.jpg" srcset="/img/loading.gif" alt="2"></p><h5 id="四、控件透明度"><a href="#四、控件透明度" class="headerlink" title="四、控件透明度"></a>四、控件透明度</h5><p>右边两个预览窗分别是正常模式与黑暗模式的色彩预览，通过调整进度条可以实现不同的控件透明度，每次拖动透明度进度条都可以保持上一次的透明度不变，可实现多种透明度的控件同时使用。<img src="/FreePods-v1-4%E6%9B%B4%E6%96%B0%E5%86%85%E5%AE%B9/1.jpg" srcset="/img/loading.gif" alt="1"></p><h4 id="修复BUG"><a href="#修复BUG" class="headerlink" title="修复BUG:"></a>修复BUG:</h4><h5 id="1-部分机型左右错误"><a href="#1-部分机型左右错误" class="headerlink" title="1.部分机型左右错误"></a>1.部分机型左右错误</h5><h5 id="2-开盖弹窗速度"><a href="#2-开盖弹窗速度" class="headerlink" title="2.开盖弹窗速度"></a>2.开盖弹窗速度</h5>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>更新内容</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>常见问题</title>
+    <link href="/2020/04/17/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/"/>
+    <url>/2020/04/17/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98/</url>
+    
+    <content type="html"><![CDATA[<h5 id="1-为何需要定位权限"><a href="#1-为何需要定位权限" class="headerlink" title="1.为何需要定位权限?"></a>1.为何需要定位权限?</h5><p>解答：从Android 6.0之后，想要扫描低功率蓝牙设备，应用需要拥有访问设备位置的权限。这是因为Bluetooth beacons蓝牙信标，可用于确定手机和用户的位置。</p><h5 id="2-为什么摘下暂停、戴上播放、开盖、关闭都有延迟"><a href="#2-为什么摘下暂停、戴上播放、开盖、关闭都有延迟" class="headerlink" title="2.为什么摘下暂停、戴上播放、开盖、关闭都有延迟?"></a>2.为什么摘下暂停、戴上播放、开盖、关闭都有延迟?</h5><p>解答：扫描参数在iOS、Android中都是硬编码的，在Android上，可以选择以下三种模式：<i>SCAN_MODE_BALANCED、SCAN_MODE_LOW_LATENCY、SCAN_MODE_LOW_POWER</i><br>分别对应的响应时间是<i>4096ms、4096ms、5120ms</i>，故如果你的开盖时间点正好卡最后一毫秒时你需要等待<i>8191ms、10239ms</i>，以及关闭屏幕后，BLE扫描模式被设定为SCAN_MODE_LOW_POWER不可力抗。</p><h5 id="3-为什么会被杀进程"><a href="#3-为什么会被杀进程" class="headerlink" title="3.为什么会被杀进程?"></a>3.为什么会被杀进程?</h5><p>解答：<br>    1.电源管理中去掉耗电限制。</p><p>​    2.需要将应用上锁，详情见保活解答页。</p><p>​    3.设置允许自启动以及放入白名单。</p><h5 id="4-为什么不支持别的耳机"><a href="#4-为什么不支持别的耳机" class="headerlink" title="4.为什么不支持别的耳机?"></a>4.为什么不支持别的耳机?</h5><p>解答：因为我没有，没有办法进行开发测试。</p><h5 id="5-摘下暂停为什么没用？"><a href="#5-摘下暂停为什么没用？" class="headerlink" title="5.摘下暂停为什么没用？"></a>5.摘下暂停为什么没用？</h5><p>解答：<br>    1.可能是延迟，造成延迟的详细原因看Q2;</p><p>​    2.播放器设置中开启了允许与其他应用一同播放的选项。</p><h5 id="6-是否有收费的想法-为什么"><a href="#6-是否有收费的想法-为什么" class="headerlink" title="6.是否有收费的想法?为什么?"></a>6.是否有收费的想法?为什么?</h5><p>解答：有，但是目前所有的功能在以后依旧是免费，即便是有付费，价格不会超过3元;为了创作热情和服务器的维护等。当然，打赏过的用户，我已经在支付宝加过标签，未来所有打赏的支付宝订单号，将作为激活码，且一次激活与QQ账号绑定，换机不用重新激活或者反激活。</p><h5 id="7-省电模式有什么用"><a href="#7-省电模式有什么用" class="headerlink" title="7.省电模式有什么用?"></a>7.省电模式有什么用?</h5><p>解答：Android ble协议提供了三种轮询模式，省电模式会默认降低轮询的速度。</p>]]></content>
+    
+    
+    
+    <tags>
+      
+      <tag>常见问题</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>
